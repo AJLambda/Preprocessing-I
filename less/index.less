@@ -103,11 +103,13 @@ header nav a:hover{
 
 /* content styles*/
 
+/*top content*/
 .top-content {
 	background: #e9ecef;
 	border: 1px ;
 	border-radius: 1%;
 	padding: 10% 5%;
+	width: 100%;
 }
 
 .top-content .arizona-img {
@@ -137,4 +139,55 @@ header nav a:hover{
 .top-content button:hover {
 	background: black;
 	color: white;
+}
+
+/*middle content*/
+.middle-content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0;
+	
+}
+
+.middle-content .text-container {
+	width: 50%;
+}
+
+.middle-content .text-container2 {
+	width: 50%;
+}
+
+.middle-content .text-container2 ul {
+	border: 1px solid gray;
+}
+
+.middle-content .text-container2 ul li {
+	margin: 10px 10px 0;
+	border-bottom: 1px solid gray;
+}
+
+/*bottom content*/
+.bottom-content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid black;
+}
+
+.bottom-content .text-container {
+	width: 100%;
+	align-content: space-between;
+	border: 1px solid red;
+}
+
+/* footer content */
+footer {
+	background: gray;
+	color: white;
+	padding: 30px;
+	text-align: center;
+	width: 850px;
+	margin: 20px auto;
 }
