@@ -1,7 +1,15 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+.bordered {
+  border-top: 1px dashed #6a6767;
+  border-bottom: 1px dashed #6a6767;
+}
+.flex1 {
+  display: flex;
+  flex-direction: row;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+}
 html,
 body,
 div,
@@ -86,7 +94,8 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 62.5%;
+  /* 10px base */
   font: inherit;
   vertical-align: baseline;
 }
@@ -127,21 +136,22 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
-* {
+html {
   box-sizing: border-box;
+  font-family: Arial, "sans-serif";
 }
-html,
-body {
-  height: 100%;
+* {
+  box-sizing: inherit;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-family: 'Rubik', sans-serif;
+  color: #39acf4;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-family: Arial, "sans-serif";
 }
 p {
   line-height: 1.4;
@@ -149,6 +159,12 @@ p {
 .container {
   width: 800px;
   margin: 0 auto;
+}
+@media ( max-width: 500px ) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 /*header styles*/
 header {
@@ -162,7 +178,14 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 2rem 0;
+}
+@media ( max-width: 500px ) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
 }
 header nav a {
   color: black;
@@ -176,30 +199,43 @@ header nav a:hover {
 /*top content*/
 .top-content {
   background: #e9ecef;
-  border: 1px ;
+  border: 1px;
   border-radius: 1%;
-  padding: 10% 5%;
+  padding: 10% 5% 0.5% 5%;
   width: 100%;
 }
 .top-content .arizona-img {
   width: 50%;
 }
+@media ( max-width: 500px ) {
+  .top-content .arizona-img {
+    width: 100%;
+  }
+}
 .top-content .text-container {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .top-content .text-container2 {
-  margin: 20px 0;
+  margin: 2rem 0;
+  padding: 2rem 0;
   border-top: 1px solid lightgrey;
 }
 .top-content button {
   background: #6a6767;
   color: white;
-  margin-top: 2%;
-  padding: 2% 44px;
-  font-size: 17px;
+  margin-top: 2rem;
+  padding: 1rem 4%;
+  font-size: 1.7rem;
   border: 1px solid black;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
+}
+@media ( max-width: 500px ) {
+  .top-content button {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
 }
 .top-content button:hover {
   background: black;
@@ -211,39 +247,47 @@ header nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 20px 0;
+  margin: 2rem 0;
+}
+@media ( max-width: 500px ) {
+  .middle-content {
+    width: 100%;
+  }
 }
 .middle-content .text-container {
   width: 50%;
+  margin: 0 2% 0 0;
 }
 .middle-content .text-container2 {
   width: 50%;
 }
 .middle-content .text-container2 ul {
-  border: 1px solid gray;
+  border: 0.5px solid lightgray;
 }
 .middle-content .text-container2 ul li {
-  margin: 10px 10px 0;
-  border-bottom: 1px solid gray;
+  padding: 1rem 0px 10px 1rem;
+  border-bottom: 1px solid lightgray;
 }
-/*bottom content*/
-.bottom-content {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  border: 1px solid black;
-}
+/* bottom content */
 .bottom-content .text-container {
-  width: 100%;
-  align-content: space-between;
-  border: 1px solid red;
+  margin-bottom: 2rem;
+  border-top: 1px dashed #6a6767;
+  border-bottom: 1px dashed #6a6767;
+}
+/* contact */
+.contact {
+  text-align: center;
 }
 /* footer content */
 footer {
-  background: gray;
+  background: #6a6767;
   color: white;
-  padding: 30px;
+  padding: 3rem;
   text-align: center;
-  width: 850px;
-  margin: 20px auto;
+  margin: 2rem auto;
+}
+@media ( max-width: 500px ) {
+  footer {
+    width: 100%;
+  }
 }
