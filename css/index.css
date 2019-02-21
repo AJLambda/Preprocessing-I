@@ -1,1 +1,293 @@
-/* Compile your LESS file! */
+.bordered {
+  border-top: 1px dashed #6a6767;
+  border-bottom: 1px dashed #6a6767;
+}
+.flex1 {
+  display: flex;
+  flex-direction: row;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 62.5%;
+  /* 10px base */
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+html {
+  box-sizing: border-box;
+  font-family: Arial, "sans-serif";
+}
+* {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #39acf4;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-family: Arial, "sans-serif";
+}
+p {
+  line-height: 1.4;
+}
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+@media ( max-width: 500px ) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/*header styles*/
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header nav {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+@media ( max-width: 500px ) {
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+/* content styles*/
+/*top content*/
+.top-content {
+  background: #e9ecef;
+  border: 1px;
+  border-radius: 1%;
+  padding: 10% 5% 0.5% 5%;
+  width: 100%;
+}
+.top-content .arizona-img {
+  width: 50%;
+}
+@media ( max-width: 500px ) {
+  .top-content .arizona-img {
+    width: 100%;
+  }
+}
+.top-content .text-container {
+  margin-top: 1rem;
+}
+.top-content .text-container2 {
+  margin: 2rem 0;
+  padding: 2rem 0;
+  border-top: 1px solid lightgrey;
+}
+.top-content button {
+  background: #6a6767;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem 4%;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media ( max-width: 500px ) {
+  .top-content button {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+}
+.top-content button:hover {
+  background: black;
+  color: white;
+}
+/*middle content*/
+.middle-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 2rem 0;
+}
+@media ( max-width: 500px ) {
+  .middle-content {
+    width: 100%;
+  }
+}
+.middle-content .text-container {
+  width: 50%;
+  margin: 0 2% 0 0;
+}
+.middle-content .text-container2 {
+  width: 50%;
+}
+.middle-content .text-container2 ul {
+  border: 0.5px solid lightgray;
+}
+.middle-content .text-container2 ul li {
+  padding: 1rem 0px 10px 1rem;
+  border-bottom: 1px solid lightgray;
+}
+/* bottom content */
+.bottom-content .text-container {
+  margin-bottom: 2rem;
+  border-top: 1px dashed #6a6767;
+  border-bottom: 1px dashed #6a6767;
+}
+/* contact */
+.contact {
+  text-align: center;
+}
+/* footer content */
+footer {
+  background: #6a6767;
+  color: white;
+  padding: 3rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+@media ( max-width: 500px ) {
+  footer {
+    width: 100%;
+  }
+}
